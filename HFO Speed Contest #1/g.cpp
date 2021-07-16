@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 
-
-
 using namespace std;
 
 int n;
@@ -36,7 +34,6 @@ for(int i = 0; i < n; i++)
   else if(x + y > r && (*points.upper_bound(x)) > (x + y))r = x + y; //right side
   else ans--;//center
 }
-
 cout << ans << endl;
 
 return 0;
