@@ -8,7 +8,7 @@ vector<int>one,two;
 int main(){
 ios_base::sync_with_stdio(0);
 cin >> n;
-for(int i = 1;i <= n; i++)
+for(int i = 1; i <= n; i++)
 {
   int x;
   cin >> x;
