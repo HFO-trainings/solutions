@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#define ll long long
 
 using namespace std;
 
@@ -26,10 +25,10 @@ for(int i = 0; i < n - 1; i++)
 {
   if(massiv[i + 1] - massiv[i] > 0)raz = __gcd(raz,massiv[i + 1] - massiv[i]);
 }
-ll ans = 0;
+long long ans = 0;
 for(int i = 0; i < n - 1; i++)
 {
- ll vz = massiv[n - 1] - massiv[i];
+ long long vz = massiv[n - 1] - massiv[i];
  ans += vz / raz;
 }
 
