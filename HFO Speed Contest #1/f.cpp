@@ -10,8 +10,8 @@ int f(vector<int>&el)
   preff[n - 1] = el[n - 1];
   for(int i = n - 2; i >= 0; i--)
   {
-	preff[i] = preff[i + 1];
-	preff[i] = max(preff[i], el[i]);
+	 preff[i] = preff[i + 1];
+	 preff[i] = max(preff[i], el[i]);
   }
   for(int i = 0;i < n - 1; i++)
   {
@@ -37,19 +37,18 @@ for(int i = 1; i <= n;i++)
   int minn = INT_MAX;
   for(int j = 1; j <= nn; j++)
   {
-	int x;
-	cin >> x;
-	maxx = max(maxx,x);
-	minn = min(minn,x);
-	tmp.push_back(x);
+	 int x;
+	 cin >> x;
+	 maxx = max(maxx,x);
+	 minn = min(minn,x);
+	 tmp.push_back(x);
   }
   int c = f(tmp);
   if(c)cnt++;
   else
   {
-	mn.push_back(minn);
-	mx.push_back(maxx);
-
+	 mn.push_back(minn);
+	 mx.push_back(maxx);
   }
 }
 
