@@ -50,7 +50,7 @@ while(T--)
      if(j.first >= i.first)sum += (j.first - i.first) * j.second; //If count bigger than what we want to keep , we delete the difference multiplying on number of count.
      else sum += j.first * j.second; //If count smaller than what we want to keep , we delete all that numbers (count * number of count)
    }
-   ans = min(ans, sum); //Checking the answer
+   ans = min(ans, sum); //Checking the answer 
   }
   cout << ans << endl;
 
