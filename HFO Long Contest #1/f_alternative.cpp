@@ -38,7 +38,7 @@ while(T--)
   {
     counts.insert(make_pair(i.second,cnt_of_cnt[i.second])); //Adding in set all counts
   }
-  //Brutefore part
+  //Bruteforce part
   int ans = INT_MAX;
   for(auto i: counts)
   {
@@ -50,7 +50,7 @@ while(T--)
      if(j.first >= i.first)sum += (j.first - i.first) * j.second; //If count bigger than what we want to keep , we delete the difference multiplying on number of count.
      else sum += j.first * j.second; //If count smaller than what we want to keep , we delete all that numbers (count * number of count)
    }
-   ans = min(ans, sum); //Checking the answer 
+   ans = min(ans, sum); //Checking the answer
   }
   cout << ans << endl;
 
